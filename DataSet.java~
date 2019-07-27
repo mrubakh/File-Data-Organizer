@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.*;
+
+public class DataSet{
+  
+  
+  public DataSet(String[] fieldNames, ArrayList<String[]> data)
+  {
+    
+    //Debug code -- prints in the passed in column headers and first row of Data
+    //Comment out or remove this in your final code!
+    System.out.println(Arrays.toString(fieldNames));
+    System.out.println(Arrays.toString(data.get(0)));
+    
+  }
+  
+  
+  
+  
+  public ArrayList<String[]> applyFilters(ArrayList<Filter> filters){
+    
+    //Prints the filters -- here for debugging, c
+    //Comment out or remove this in your final code!
+    for (int i = 0; i < filters.size(); i++)
+      System.out.println("Filter #" + (i+1) + ": " + filters.get(i));  
+    
+    
+
+    return null;  //placeholder
+  }  
+  
+  //You should implement a nested Comparator class inside your DataSet
+  //ex: class DataSetComparator implements....
+  
+}
+
+
